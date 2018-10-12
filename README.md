@@ -1,10 +1,27 @@
 
 # Fundamentos ejercicios 1
+
+Repositorio para la clase de Fundamentos de programación
+
+### Git
+- ¿Qué es Git?
+- Instalación
+- Uso básico
+ - configure
+ - status
+ - add
+ - commit
+ - push
+ - pull
+ - checkout
+ - branch
+ - merge
+
 ### Markdown
 - Headings
- - h1, h2, h3, h4, h5, h6
-- Lists
- - Concatenated Lists
+- Listas
+ - Lista concatenada
 - Links Ej.: [Iconos site](https://iconos.edu.mx)
-- Photos Ej.: ![](img/josecaos.live.2.jpg)
-<!-- - Photos Ej.: ![](/home/josecaos/Pictures/josecaos.live.2.jpg) -->
+- Fotos Ej.: ![](img/josecaos.live.2.jpg)
+
+### Repaso HTML + CSS
