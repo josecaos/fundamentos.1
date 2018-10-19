@@ -25,3 +25,4 @@ Repositorio para la clase de Fundamentos de programación
 - Fotos Ej.: ![](img/josecaos.live.2.jpg)
 
 ### Repaso HTML + CSS
+- Template básico HTML
