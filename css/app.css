@@ -1,8 +1,46 @@
-
+/* wireframe */
 * {
   outline: 1px solid purple;
 }
+/* variables */
+:root {
+  --color-primario: #00ff00;
+  --color-secundario: #0ff000;
+  --color-link: #ff0000;
+  --color-link-hover: #f00000;
+  --altura-header: 75px;
+  --altura-seccion: 100vh;
+}
 /* resets */
-div, section, article, ul {
+div, section, article, ul, nav {
   height: 100%;
+}
+a {
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.ha {
+  height: auto;
+}
+/* header */
+header {
+  height: var(--altura-header)
+}
+figure {
+  height: 100%;
+  display: block;
+}
+figure img {
+  display: block;
+  margin: auto;
+  height: 100%;
+  width: auto;
+}
+nav ul {
+  list-style-type: none;
+}
+/* body */
+#heroscreen, #info, #participantes, #ubicacion {
+  height: var(--altura-seccion);
 }
