@@ -12,6 +12,9 @@
   --altura-seccion: 100vh;
 }
 /* resets */
+body {
+  /* background-color: black; */
+}
 div, section, article, ul, nav {
   height: 100%;
 }
