@@ -50,10 +50,12 @@ Repositorio para la clase de Fundamentos de programación orientada a objetos
       - Fundamentos
         - [OOP / POO](https://codesolt.com/tutoriales/fundamentos/programacion-orientada-objetos/)
         - [OOP / POO](https://msdn.microsoft.com/es-es/library/bb972232.aspx)
+        - [ECMASrypt 6](https://www.youtube.com/watch?v=OjMZg9gTLgw)  
+        - [JS](https://www.youtube.com/watch?v=k9wTpG8NI4Q)  
       - Ejercicios
       - Librerias / Frameworks
        - jQuery
-       - Introdución a React
+       - Introducción a React
        - *Liberias de interés ...*
 
 ### Proyecto final
