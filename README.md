@@ -6,6 +6,8 @@ Repositorio para la clase de Fundamentos de programación orientada a objetos
 ### Git
 - ¿Qué es Git?
 - Instalación
+  - Linux (Git)[https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=4&cad=rja&uact=8&ved=2ahUKEwjtgsPUycDeAhVFSq0KHS-IBywQFjADegQIBBAB&url=https%3A%2F%2Fgit-scm.com%2Fbook%2Fen%2Fv2%2FGetting-Started-Installing-Git&usg=AOvVaw34_NoLPGdtnUVR92ZCaR9H]
+  - Windows (Git for windows)[https://gitforwindows.org/]
 - Comandos básicos
   - configure
   - status
@@ -19,16 +21,16 @@ Repositorio para la clase de Fundamentos de programación orientada a objetos
 
 ### Linea de comandos - bash
 - Comandos básicos
- - ls
-   - -la
- - cd
-   - /
-   - .
-   - ..
- - cp
- - mv
- - mkdir
- - touch
+   - ls
+     - -la
+   - cd
+     - /
+     - .
+     - ..
+   - cp
+   - mv
+   - mkdir
+   - touch
 
 ### Markdown
 - Headings
