@@ -1,6 +1,6 @@
 /* wireframe */
 * {
-  outline: 1px solid purple;
+  outline: 1px solid lime;
 }
 /* variables */
 :root {
@@ -23,6 +23,9 @@ a {
   height: 100%;
   width: 100%;
 }
+ul {
+  list-style-type: none;
+}
 .ha {
   height: auto;
 }
@@ -41,11 +44,8 @@ figure img {
   height: 100%;
   width: auto;
 }
-nav ul {
-  list-style-type: none;
-}
 /* body */
-#heroscreen, #info, #participantes, #ubicacion {
+#heroscreen, #info, #ubicacion {
   height: var(--altura-seccion);
 }
 
@@ -74,4 +74,52 @@ nav ul {
 }
 .heroscreen_text h3 {
   font-size: 4em
+}
+/* info */
+/*  */
+/* Participantes */
+.participantes_item {
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  padding: 0;
+}
+.participantes_item_back {
+  position: absolute;
+  padding: 0;
+  width: 100%;
+}
+.participantes_item_back img {
+  height: 100%;
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: -1;
+}
+.participantes_item_text {
+  position: absolute;
+  z-index: 0;
+
+}
+/* Ubucacion */
+#ubicacion {
+  overflow: hidden;
+}
+#map {
+  background: url('../img/placeholder.png') no-repeat;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+}
+/* footer */
+footer {
+  height: var(--altura-header);
+}
+.social {
+  font-size: 2em
+}
+.social ul {
+  padding: 0;
+  margin: 0;
 }
