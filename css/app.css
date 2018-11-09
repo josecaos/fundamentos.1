@@ -1,6 +1,6 @@
 /* wireframe */
 * {
-  outline: 1px solid lime;
+  outline: 1px solid black;
 }
 /* variables */
 :root {
@@ -26,12 +26,23 @@ a {
 ul {
   list-style-type: none;
 }
+h1, h2, h3, h4, h5, h6 {
+  padding: 16px 0 16px 0;
+}
+form {
+  margin-bottom: 16px;
+}
 .ha {
   height: auto;
 }
+#main,#info, #ubicacion, #participantes {
+  padding-top: var(--altura-header);
+}
 /* header */
 header {
-  height: var(--altura-header)
+  height: var(--altura-header);
+  position: fixed;
+  z-index: 10000;
 }
 figure {
   height: 100%;
@@ -48,8 +59,6 @@ figure img {
 #heroscreen, #info, #ubicacion {
   height: var(--altura-seccion);
 }
-
-
 /* heroscreen */
 #heroscreen {
   position: relative;
@@ -111,6 +120,7 @@ figure img {
   background-size: cover;
   background-position: center;
   overflow: hidden;
+  height: 100%;
 }
 /* footer */
 footer {
