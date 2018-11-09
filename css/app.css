@@ -48,3 +48,30 @@ nav ul {
 #heroscreen, #info, #participantes, #ubicacion {
   height: var(--altura-seccion);
 }
+
+
+/* heroscreen */
+#heroscreen {
+  position: relative;
+}
+.heroscreen_background {
+  overflow: hidden;
+  position: absolute;
+  padding: 0;
+  z-index: -1;
+}
+.heroscreen_background img {
+  height: 100%;
+  width: 100%;
+}
+.heroscreen_text {
+  position: absolute;
+  left: 0;
+  z-index: 0;
+}
+.heroscreen_text h1 {
+  font-size: 6em
+}
+.heroscreen_text h3 {
+  font-size: 4em
+}
