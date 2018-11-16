@@ -9,7 +9,7 @@
   <style>
 
   body {
-      padding: 16px;
+    padding: 16px;
   }
   ul {
     margin: 16px;
@@ -23,22 +23,39 @@
 </head>
 <body>
 
-  <script type="text/javascript">
+  <script>
 
   $(document).ready(() => {
 
     // test()
+    titulos("titulo1","Me escribieron desde JavaScript")
+    titulos("titulo2","Sintaxis de JS")
 
-    titulo("titulo1","Me escribieron desde JavaScript")
-    titulo("titulo2","Sintaxis de JS")
+    contador()
+
+    arrays(5)
 
   })
 
-  function titulo(id,string) {
+  function titulos(id,string) {
 
     var titulo = document.getElementById(id)
 
     return titulo.innerHTML = string
+
+  }
+
+  function contador() {
+
+    var cuenta = 0
+    var titulo = document.getElementById("contador")
+    setInterval(()=>{
+      titulo.innerHTML = cuenta
+      cuenta++
+      // console.log(cuenta);
+
+    },1000)
+
   }
 
   function test() {
@@ -48,43 +65,72 @@
 
   }
 
-</script>
+  // Ejemplo Arrays
+  function arrays(index) {
+    var array = [1,4,"Soy indice dos",90,"Iconos","Mafer se esta durmiendo"]
+    var cont = document.getElementById("arr")
+    var indice = document.getElementById("indice_array")
 
-<h1 id="titulo1"></h1>
+    cont.innerHTML = array[index]
+    indice.innerHTML = array.length
 
-<p>Eleméntos del lenguaje</p>
-<ul>
-  <li>Función -> Es una instrucción, se crea 'function nombre() {}' y puede contener parámetros o argumentos</li>
-  <li>Función Anónima-> Es una instrucción, se crea '() => {}' no contiene parámetros o argumentos</li>
-  <li>Metodo -> Se invocan despues de un punto, se escriben "camelCase" y contienen argumentos o parametros ej: document.getElementById(parametro)</li>
-  <li>String o Cadenas de texto -> Se representa siempre entre comillas "Soy un String".</li>
-  <li>Variable -> Espacio de memoria que almacena objetos y hacer referencia a un valor. JS es un lenguaje no tipado, ya que no hay que hacer referencia al tipo de valor que vá a contener nuestra variable</li>
-  <li>Arrays -> Son grupos de objetos, estos se encierran entr corchetes '[objeto1, objeto2, objeto3]'</li>
-  <li>Booleanos -> Una variable de tipo boolean almacena un tipo especial de valor que solamente puede tomar dos valores: 'true' o 'false'.</li>
-  <li>Operadores<ul>
-    <li>Asignación: '='</li>
-    <li>Incremento y decremento: suma 1: '++', resta 1: '--'</li>
-    <li>Logicos: negación '!', And '&&', Or '||'</li>
-    <li>Matemáticos: Más: '+', Menos:'-', Entre:'/', Multiplicación'*', Modulo:'%' -> calcula el resto de la división entera de dos números. Si se divide por ejemplo 10 y 5, la división es exacta y da un resultado de 2. El resto de esa división es 0, por lo que módulo de 10 y 5 es igual a 0.
-      <br>
-      Los operadores matemáticos también se pueden combinar con el operador de asignación: '+=', '-=', '*=', '/=,'%='.
-    </li>
-    <li>Relacionales: Mayor que '>', Menor que '<', Mayor o Igual '>=', Menor o Igual '<=', Igual que '==', Distinto que '!='.</li>
-  </ul>
-</li>
-<li>Estructuras de control (De flujo) -> los programas dejan de ser una sucesión lineal de instrucciones para convertirse en programas inteligentes que pueden tomar decisiones en función del valor de las variables.
+
+  }
+
+  </script>
+
+
+  <h1 id="contador"></h1>
+  <h3 id="titulo1"></h3>
+
+  <p>Eleméntos del lenguaje</p>
   <ul>
-    <li>'if'</li>
-    <li>'if else'</li>
-    <li>'when'</li>
-    <li>'for' -> for(inicializacion; condicion; actualizacion) {...}</li>
-    <li>'for in' -> for(indice in array) {...}</li>
-    <li>'switch'</li>
-  </ul>
-</li>
+    <li>Función -> Es una instrucción, se crea 'function nombre() {}' y puede contener parámetros o argumentos</li>
+    <li>Función Anónima-> Es una instrucción, se crea '() => {}' no contiene parámetros o argumentos</li>
+    <li>Metodo -> Se invocan despues de un punto, se escriben "camelCase" y contienen argumentos o parametros ej: document.getElementById(parametro)</li>
+    <li>String o Cadenas de texto -> Se representa siempre entre comillas "Soy un String".</li>
+    <li>Variable -> Espacio de memoria que almacena objetos y hacen referencia a un valor. JS es un lenguaje no tipado, ya que no hay que hacer referencia al tipo de valor que vá a contener nuestra variable
+      <br>
+      // Varibles JS ej
+      var numero = 100
+      var numero = 100.01
+      var numero = "Texto test"
+      var numero = numero + 1
+      var otro = 13
+      var numero = numero + otro
+      const siempre = 0
+      // ej en otros lenguajes de bajo nivel
+      int numero = 100
+      float numero = 10.76
+      String numero = "Texto test"
+      //
+    </li>
+    <li>Arrays -> Son grupos de objetos, estos se encierran entre corchetes '[objeto1, objeto2, objeto3]'</li>
+    <li>Booleanos -> Una variable de tipo boolean almacena un tipo especial de valor que solamente puede tomar dos valores: 'true' o 'false'.</li>
+    <li>Operadores<ul>
+      <li>Asignación: '='</li>
+      <li>Incremento y decremento: suma 1: '++', resta 1: '--'</li>
+      <li>Logicos: negación '!', And '&&', Or '||'</li>
+      <li>Matemáticos: Más: '+', Menos:'-', Entre:'/', Multiplicación'*', Modulo:'%' -> calcula el resto de la división entera de dos números. Si se divide por ejemplo 10 y 5, la división es exacta y da un resultado de 2. El resto de esa división es 0, por lo que módulo de 10 y 5 es igual a 0.
+        <br>
+        Los operadores matemáticos también se pueden combinar con el operador de asignación: '+=', '-=', '*=', '/=,'%='.
+      </li>
+      <li>Relacionales: Mayor que '>', Menor que '<', Mayor o Igual '>=', Menor o Igual '<=', Igual que '==', Distinto que '!='.</li>
+    </ul>
+  </li>
+  <li>Estructuras de control (De flujo) -> los programas dejan de ser una sucesión lineal de instrucciones para convertirse en programas inteligentes que pueden tomar decisiones en función del valor de las variables.
+    <ul>
+      <li>'if'</li>
+      <li>'if else'</li>
+      <li>'when'</li>
+      <li>'for' -> for(inicializacion; condicion; actualizacion) {...}</li>
+      <li>'for in' -> for(indice in array) {...}</li>
+      <li>'switch'</li>
+    </ul>
+  </li>
 </ul>
 
-<h1 id="titulo2"></h1>
+<h3 id="titulo2"></h3>
 
 <p>La sintaxis de JS:</p>
 
@@ -106,6 +152,15 @@
     Ejemplo: // ó /**/
   </li>
 </ul>
+
+
+<h3>Ejemplo arrays</h3>
+<p> El objeto en el indice es:
+  <h1 id="indice_array"></h1>
+</p>
+<br>
+<i id="arr"></i>
+
 
 </body>
 
