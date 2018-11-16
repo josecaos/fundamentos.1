@@ -6,38 +6,106 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <style>
+
+  body {
+      padding: 16px;
+  }
+  ul {
+    margin: 16px;
+  }
+  li {
+    margin: 8px;
+  }
+
+</style>
+
 </head>
 <body>
 
   <script type="text/javascript">
 
-$(document).ready(() => {
+  $(document).ready(() => {
 
-  test()
+    // test()
 
-})
+    titulo("titulo1","Me escribieron desde JavaScript")
+    titulo("titulo2","Sintaxis de JS")
 
-function test() {
+  })
 
-// console.log("objetos");
-// titulo.write("Estoy escrito con JavaScript")
-  var titulo = document.getElementById("titulo1")
-  var titulox = document.get
-  titulo.innerHTML = "Estoy escrito con JavaScript"
+  function titulo(id,string) {
 
-}
+    var titulo = document.getElementById(id)
+
+    return titulo.innerHTML = string
+  }
+
+  function test() {
+
+    var titulo = document.getElementById("titulo1")
+    titulo.innerHTML = "Estoy escrito con JavaScript"
+
+  }
 
 </script>
 
 <h1 id="titulo1"></h1>
 
+<p>Eleméntos del lenguaje</p>
 <ul>
-  <li>Metodo = Se invocan despues de un punto, se escriben "camel case" y contienen argumentos o parametros </li>
-  <li>String o Texto = Se representa siempre entre comillas </li>
-  <li>Variable = Espacio de memoria que contiene objetos</li>
+  <li>Función -> Es una instrucción, se crea 'function nombre() {}' y puede contener parámetros o argumentos</li>
+  <li>Función Anónima-> Es una instrucción, se crea '() => {}' no contiene parámetros o argumentos</li>
+  <li>Metodo -> Se invocan despues de un punto, se escriben "camelCase" y contienen argumentos o parametros ej: document.getElementById(parametro)</li>
+  <li>String o Cadenas de texto -> Se representa siempre entre comillas "Soy un String".</li>
+  <li>Variable -> Espacio de memoria que almacena objetos y hacer referencia a un valor. JS es un lenguaje no tipado, ya que no hay que hacer referencia al tipo de valor que vá a contener nuestra variable</li>
+  <li>Arrays -> Son grupos de objetos, estos se encierran entr corchetes '[objeto1, objeto2, objeto3]'</li>
+  <li>Booleanos -> Una variable de tipo boolean almacena un tipo especial de valor que solamente puede tomar dos valores: 'true' o 'false'.</li>
+  <li>Operadores<ul>
+    <li>Asignación: '='</li>
+    <li>Incremento y decremento: suma 1: '++', resta 1: '--'</li>
+    <li>Logicos: negación '!', And '&&', Or '||'</li>
+    <li>Matemáticos: Más: '+', Menos:'-', Entre:'/', Multiplicación'*', Modulo:'%' -> calcula el resto de la división entera de dos números. Si se divide por ejemplo 10 y 5, la división es exacta y da un resultado de 2. El resto de esa división es 0, por lo que módulo de 10 y 5 es igual a 0.
+      <br>
+      Los operadores matemáticos también se pueden combinar con el operador de asignación: '+=', '-=', '*=', '/=,'%='.
+    </li>
+    <li>Relacionales: Mayor que '>', Menor que '<', Mayor o Igual '>=', Menor o Igual '<=', Igual que '==', Distinto que '!='.</li>
+  </ul>
+</li>
+<li>Estructuras de control (De flujo) -> los programas dejan de ser una sucesión lineal de instrucciones para convertirse en programas inteligentes que pueden tomar decisiones en función del valor de las variables.
+  <ul>
+    <li>'if'</li>
+    <li>'if else'</li>
+    <li>'when'</li>
+    <li>'for' -> for(inicializacion; condicion; actualizacion) {...}</li>
+    <li>'for in' -> for(indice in array) {...}</li>
+    <li>'switch'</li>
+  </ul>
+</li>
 </ul>
 
+<h1 id="titulo2"></h1>
 
+<p>La sintaxis de JS:</p>
+
+<ul>
+  <li>
+    No se tienen en cuenta los espacios en blanco y las nuevas líneas: como sucede con XHTML, el intérprete de JavaScript ignora cualquier espacio en blanco sobrante.
+  </li>
+  <li>
+    Se distinguen las mayúsculas y minúsculas.
+  </li>
+  <li>
+    No se define el tipo de las variables, no es necesario indicar el tipo de dato que almacenará.
+  </li>
+  <li>
+    No es necesario cerrar linea con punto y coma (;).
+  </li>
+  <li>
+    Existen dos tipos de comentarios: los de una sola línea y los que ocupan varias líneas.
+    Ejemplo: // ó /**/
+  </li>
+</ul>
 
 </body>
 
