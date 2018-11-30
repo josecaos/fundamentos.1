@@ -10,11 +10,12 @@ $(document).ready( () => {
   // alert(suma(10,10) + mul(10,10))
   // alert(mul(suma(10,10),10))
 
-imprime(mul(3,9))
-regresa()
-fondo('purple')
-ancho()
+// imprime(mul(3,9))
+// regresa()
+// fondo('lime')
+// ancho()
 
+colores_fondo(250,["#3465fa","purple","black","yellow","lime","orange"])
 
 } )
 
@@ -62,4 +63,21 @@ function ancho() {
 
   })
 
+}
+
+function colores_fondo(time=1000,colorArray=['purple','red']) {
+
+  var i = 0;
+  var size = colorArray.length;
+
+  setInterval(()=> {
+    if(i == size-1) {
+      i=0
+    } else {
+      i++
+    }
+    $('body').css('background-color',colorArray[i])
+  },time)
+
+  // return i
 }
