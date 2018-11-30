@@ -57,8 +57,14 @@ Repositorio para la clase de Fundamentos de programación orientada a objetos
       - Ejercicios
       - Librerias / Frameworks
        - jQuery
+         - Tarea:
+           - Crea una función que sume 2 números 'X' y lo multiplique por otro número 'X'
+           - Crea una función que imprime dentro de un <h1> el texto pasado como argumento
+           - Crea una función que regrese en consola el valor de el scroll ( .srollTop .on('scroll') )
        - Introducción a React
        - *Liberias de interés ...*
+
+
 
 ### Proyecto final
 ...
