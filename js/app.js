@@ -79,5 +79,4 @@ function colores_fondo(time=1000,colorArray=['purple','red']) {
     $('body').css('background-color',colorArray[i])
   },time)
 
-  // return i
 }
