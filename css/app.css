@@ -6,6 +6,8 @@
 :root {
   --color-primario: #00ff00;
   --color-secundario: #0ff000;
+  --color-claro: #fff;
+  --color-oscuro: #000;
   --color-link: #ff0000;
   --color-link-hover: #f00000;
   --altura-header: 75px;
@@ -43,6 +45,11 @@ header {
   height: var(--altura-header);
   position: fixed;
   z-index: 10000;
+  background-color: var(--color-claro);
+}
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 figure {
   height: 100%;
