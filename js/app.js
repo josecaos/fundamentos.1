@@ -15,7 +15,8 @@ $(document).ready( () => {
 // fondo('lime')
 // ancho()
 imgLiquid()
-colores_fondo(1000,["#3465fa","purple","black","yellow","lime","orange"])
+slider_inicio()
+// colores_fondo(1000,["#3465fa","purple","black","yellow","lime","orange"])
 
 // Scripts tema
 
@@ -102,3 +103,11 @@ function imgLiquid() {
   })
 }
 //
+
+function slider_inicio() {
+
+  $(".slider_inicio").slick({
+    dots: true
+  })
+
+}
